@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="#FEF9D9"
     android:orientation="vertical">
 
     <TextView
@@ -10,7 +11,7 @@
 
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:background="#87A2FF"
+        android:background="#6781E9"
         android:gravity="center"
         android:padding="15dp"
         android:text="Tip Time"
@@ -21,10 +22,11 @@
         android:id="@+id/bill_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:hint="Enter Bill Amount"
         android:inputType="numberDecimal"
         android:padding="10dp"
-        android:layout_marginTop="16dp" />
+        android:textColor="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,20 +44,25 @@
             android:id="@+id/amazing_radio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="Amazing (20%)"
-            android:checked="true" />
+            android:textColorLink="#000000" />
 
         <RadioButton
             android:id="@+id/good_radio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Good (18%)" />
+            android:text="Good (18%)"
+            android:textColorLink="#000000" />
+            />
 
         <RadioButton
             android:id="@+id/ok_radio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OK (15%)" />
+            android:text="OK (15%)"
+            android:textColorLink="#000000" />
+            />
     </RadioGroup>
 
     <LinearLayout
@@ -68,23 +75,27 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Round up tip?" />
+            android:text="Round up tip?"
+            android:textColorLink="#000000" />
+            />
 
         <Switch
             android:id="@+id/round_up_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            />
+
     </LinearLayout>
 
     <Button
         android:id="@+id/calculate_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#6781E9"
         android:text="CALCULATE"
-        android:textColor="@android:color/white"
-        android:background="#6200EE"
-        android:layout_marginTop="16dp" />
+        android:textColor="@android:color/white" />
 
     <TextView
         android:id="@+id/tip_amount"
@@ -92,6 +103,8 @@
         android:layout_height="wrap_content"
         android:text="Tip Amount: "
         android:layout_marginTop="16dp"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColorLink="#000000" />
+        />
 
 </LinearLayout>
